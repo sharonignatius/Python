@@ -1,0 +1,16 @@
+name=input("Please enter your name")
+print(name)
+height=int(input("Enter your height in meters"))
+weight=int(input("Enter your weight in kilograms"))
+BMI= round(weight / (height / 100)**2,2)
+print(BMI)
+
+if BMI>0:
+    if(BMI<18.5):
+        print(name+",You are underweight.")
+    if(18.5< BMI< 24.5):
+        print(name+",You are normal weight.")
+    if(25< BMI< 29.9):
+        print(name+",You are Overweight.")
+else:
+    print(name+",You are obese.")
